@@ -11,10 +11,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path='/weather'
+            path='/weather-app/weather'
             element={sharedcity ? <Weather sharedcity={sharedcity}/> : <Navigate replace to="/" />}
           />
-          <Route path='/' element={<Home setSharedCity={setSharedCity} />} />
+          <Route path='/weather-app' element={<Home setSharedCity={setSharedCity} />} />
         </Routes>
       </BrowserRouter>
     </div>
