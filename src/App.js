@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './component/Home/Home';
+import Weather from './component/Weather/Weather';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [sharedcity, setSharedCity] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path='/weather'
+            element={sharedcity ? <Weather sharedcity={sharedcity}/> : <Navigate replace to="/" />}
+          />
+          <Route path='/' element={<Home setSharedCity={setSharedCity} />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

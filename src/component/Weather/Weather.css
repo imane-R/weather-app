@@ -1,0 +1,46 @@
+.img-bg {
+  background-image: url("coucher-soleil-ratonneau.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 58vh;
+  width: 72vw;
+  position: absolute;
+  opacity: 87%;
+  left: 14%;
+  top: 21%;
+  border-radius: 15px;
+}
+.cityname {
+  margin: 0;
+  color: white;
+  padding: 51px;
+  font-weight: 400;
+  padding-bottom: 0px;
+}
+.date {
+  color: white;
+  padding: 0px 51px 20px 51px;
+  font-weight: 200;
+  margin: 0;
+}
+.temp {
+  color: white;
+  padding: 22px 51px;
+  font-weight: 200;
+  font-size: 143px;
+  margin: 0;
+}
+.weather-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.weather-condition {
+  padding: 0px 51px;
+}
+.weather-text {
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+}

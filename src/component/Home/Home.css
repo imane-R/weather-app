@@ -1,0 +1,44 @@
+.Home {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+.logo {
+  height: 22vmin;
+  pointer-events: none;
+  margin-top: 15px;
+}
+.title {
+  font-size: 30px;
+  margin-top: 59px;
+}
+.city-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+input {
+  width: 30%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.submit {
+  width: 11%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.App-header {
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
