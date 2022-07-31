@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route
             path='/weather-app/weather'
-            element={sharedcity ? <Weather sharedcity={sharedcity}/> : <Navigate replace to="/" />}
+            element={sharedcity ? <Weather sharedcity={sharedcity}/> : <Navigate replace to="/weather-app" />}
           />
           <Route path='/weather-app' element={<Home setSharedCity={setSharedCity} />} />
         </Routes>

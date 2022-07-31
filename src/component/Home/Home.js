@@ -13,7 +13,7 @@ function Home({ setSharedCity }) {
 
   const handelSubmit = (e) => {
     setSharedCity(city);
-    navigate('/weather');
+    navigate('/weather-app/weather');
   };
 
   return (
