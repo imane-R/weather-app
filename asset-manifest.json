@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/weather-app/static/css/main.d5f8153f.css",
-    "main.js": "/weather-app/static/js/main.cd18703e.js",
+    "main.js": "/weather-app/static/js/main.f2e05c50.js",
     "static/js/787.d9312eb8.chunk.js": "/weather-app/static/js/787.d9312eb8.chunk.js",
     "static/media/logo.png": "/weather-app/static/media/logo.22ce0ffb6af6f5f3c368.png",
     "static/media/coucher-soleil-ratonneau.webp": "/weather-app/static/media/coucher-soleil-ratonneau.8a69ea1ce73c6af64a7a.webp",
     "index.html": "/weather-app/index.html",
     "main.d5f8153f.css.map": "/weather-app/static/css/main.d5f8153f.css.map",
-    "main.cd18703e.js.map": "/weather-app/static/js/main.cd18703e.js.map",
+    "main.f2e05c50.js.map": "/weather-app/static/js/main.f2e05c50.js.map",
     "787.d9312eb8.chunk.js.map": "/weather-app/static/js/787.d9312eb8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5f8153f.css",
-    "static/js/main.cd18703e.js"
+    "static/js/main.f2e05c50.js"
   ]
 }
