@@ -6,7 +6,6 @@
 .logo {
   height: 22vmin;
   pointer-events: none;
-  margin-top: 15px;
 }
 .title {
   font-size: 30px;
@@ -41,4 +40,31 @@ input {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 880px) {
+  .title {
+    margin: 0;
+  }
+  input {
+    width: 82%;
+  }
+  .submit {
+    width: 38%;
+  }
 }

@@ -1,6 +1,7 @@
 import './Weather.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Pie, PieChart, Cell } from 'recharts';
 
 
 function Weather({ sharedcity }) {
@@ -47,11 +48,34 @@ function Weather({ sharedcity }) {
               </div>
             </div>
             <div className='weather-info'>
-              <p className='temp'> {weather.current.temp_c}°</p>
+              <div className='temp'> {weather.current.temp_c}°</div>
             </div>
           </div>
+          <div className='humidity-chart'>
+            <div className='scoreTitle'>Humidity</div>
+            <div className='percentage'>
+                <div className='percentageDescription'><span className='perScore'>{weather.current.humidity}</span> </div>
+            </div>
+            <PieChart className='test' width={65} height={75}>
+              <Pie
+                data={[ { name: 'humidity', value: weather.current.humidity } ]}
+                cx={85}
+                cy={85}
+                innerRadius={70}
+                outerRadius={80}
+                fill='#8884d8'
+                paddingAngle={5}
+                dataKey='value'
+              >
+                <Cell fill='#FFF' />
+                <Cell fill='#8884d8' />
+              </Pie>
+            </PieChart>
         </div>
+        </div>
+
       )}
+
     </>
   );
 }

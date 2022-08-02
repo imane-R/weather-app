@@ -1,6 +1,7 @@
 .App {
   background: linear-gradient(#7b99c6, #eac5c1);
   min-height: 100vh;
+  padding: 15px;
 }
 
 .App-link {
